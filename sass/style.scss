@@ -134,3 +134,59 @@ nav{
         color: rgb(202, 202, 202);
     }
 }
+.timeline{
+    border: 1px solid $grey;
+    width: 80%;
+    margin: 5% auto 0 auto;
+    height: 300px;
+    p{
+        margin-top: 5%;
+    }
+
+}
+h3{
+    color: $blue;
+    margin-top: 3%;
+    text-align: center;
+}
+.disable{
+    display: none;
+
+}
+footer section{
+    width: 80%;
+    margin: 2% auto 2% auto;
+}
+h4 img{
+    width: 30px;
+}
+address{
+    font-style: normal;
+    font-family: 'museo';
+}
+footer{
+    background-image: url('../assets/img/images/brent-cox-mid.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom top;
+}
+.footer{
+    display: grid;
+    grid-template-rows: 2fr 1fr 2fr;
+    grid-template-areas: 
+        'info'
+        'support'
+        'network'
+    ;
+    background: rgba($color: #c4c4c4, $alpha: 0.2);
+}
+.infoFooter{
+    grid-area: info;
+}
+.network{
+    grid-area: network;
+    background-color: white;
+
+}
+.support{
+    grid-area: support;
+}
