@@ -11,3 +11,26 @@
     src: url("../../assets/font/museo/webfontkit-20180608-022302/museo300-regular-webfont.ttf") format("truetype");
     src: url("../../assets/font/museo/webfontkit-20180608-022302/museo300-regular-webfont.woff") format("woff");
 }
+*{
+    font-size: 18px;
+    font-family: 'montserra';
+}
+p{
+    font-size: 1em;
+}
+.dateInt{
+    font-size: 3em;
+}
+.dateChar{
+    font-size: 1.5em;
+}
+h4{
+    font-family: 'montserra';
+    font-size: 1.3em;
+    line-height: 0.7em;
+    font-weight: 900;
+    color: $back-activitie;
+}
+h4 span{
+    font-family: 'museo';
+}
