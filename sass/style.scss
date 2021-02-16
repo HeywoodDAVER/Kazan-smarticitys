@@ -1,1 +1,50 @@
 @import "scss/_color.scss";
+@import "scss/_font.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo, header a{
+    
+    width: 150px;
+}
+.events img{
+    width: 100px;
+    
+}
+// .events{
+    
+//     h2{
+//         font-family: "maven";
+//         color: $blue;
+//     }
+//     h2 span{
+//         font-family: "montserra";
+//     }
+// }
+nav{
+    display: none;
+}
+.menu-checkbox:checked ~ nav{
+    display: block;
+}
+
+.menu-toggle span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: $blue;
+}
+.menu-checkbox{
+    position: absolute;
+    opacity: 0;
+    top: -5000%;
+}
+header{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
