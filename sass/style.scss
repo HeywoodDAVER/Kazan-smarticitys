@@ -167,7 +167,8 @@ address{
 footer{
     background-image: url('../assets/img/images/brent-cox-mid.jpg');
     background-repeat: no-repeat;
-    background-position: bottom top;
+    background-position: bottom;
+    background-size: 100% 100%;
 }
 .footer{
     display: grid;
@@ -177,7 +178,7 @@ footer{
         'support'
         'network'
     ;
-    background: rgba($color: #c4c4c4, $alpha: 0.2);
+    background: rgba($color: #8f8f8f, $alpha: 0.5);
 }
 .infoFooter{
     grid-area: info;
