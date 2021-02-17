@@ -1,0 +1,100 @@
+@media(min-width: 801px){
+    header{
+        background-size: 100% 90% ;
+    }
+    .deskDisable{
+        display: none;
+    }
+    nav{
+        margin: 2% 2% 0 0;
+        width: 25%;
+        float: right;
+        ul{
+            display: flex;
+            list-style: none;
+            li{
+                margin: 0 5% 0 0;
+                
+            }
+        }
+
+    }
+    .logo{
+        width: 20%;
+        margin: 2% 0 0 2%;
+    }
+    .events{
+        width: 40%;
+        margin: 3% auto 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        img{
+            grid-area: img;
+            width: 40%;
+            margin: 0 auto 0 auto;
+        }
+        .eventsTitle{
+            grid-area: title;
+            text-align: right;
+            margin-right: 30%;
+        }
+        p{
+            grid-area: para;
+            text-align: center;
+        }
+        input{
+            margin: 0 auto 0 auto;
+            height: 70%;
+            grid-area: input;
+        }
+        grid-template-areas: 
+        'img title'
+        'para para'
+        'input input'
+        ;
+    }
+    .header{
+        background: linear-gradient(180deg, rgba(33,77,90,0.4) 0%, rgba(33,77,90,0.4) 22%, rgba(0,216,255,0.4) 57%, rgba(244,152,179,0.4) 100%);
+        background-size: 100% 90%;
+        background-repeat: no-repeat;
+    }
+    .activities{
+        width: 70%;
+        margin: 0 auto 0 auto;
+        
+        .listActivities{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-column-gap: 3%;
+        }
+        img{
+            width: 100%;
+            height: 70%;
+            object-fit: cover;
+        }
+        .activitie{
+           display: flex;
+           flex-direction: column;
+           background-color: rgb(240, 240, 240);
+           height: 90%;
+            div{
+                order: 2;
+            }
+            img{
+                order: 1;
+            }
+            h4{
+                order: 2;
+                margin: 9% 0 0 5%;
+            }
+            p{
+                order: 3;
+                margin: 9% 0 0 5%;
+            }
+           
+
+        }
+    }
+}

@@ -1,5 +1,6 @@
 @import "scss/_color.scss";
 @import "scss/_font.scss";
+@import "scss/_desktop";
 
 *{
     margin: 0;
@@ -10,23 +11,6 @@ header{
     background-repeat: no-repeat;
     background-position: top right;
 }
-.header{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 2fr;
-    grid-template-areas: 
-    "logo label"
-    "events events"
-    ;
-    background: rgba($color: #000000, $alpha: 0.2)
-}
-header a {
-    grid-area: logo;
-    width: 80%;
-    height: 40%;
-    margin-left: 20%;
-    margin-top: 15%;
-}
 .menu-toggle{
     margin-left: 60%;
     margin-top: 35%;
@@ -34,56 +18,99 @@ header a {
     height: 5%;
     grid-area: label;
 }
-.events{
-    grid-area: events;
+
+@media(max-width: 800px){
+    header{
+        background-size: 250% 70%;
+    }
+    nav{
+        display: none;
+    }
+    .menu-checkbox:checked ~ nav{
+        display: block;
+    }
+    .menu-toggle span{   
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: $blue;
+    }
+    .menu-checkbox{
+        position: absolute;
+        opacity: 0;
+        top: -5000%;
+    }
+    .logo{
+        width: 100%;
+    }
+    .header{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas: 
+        "logo label"
+        "events events"
+        ;
+        background: linear-gradient(180deg, rgba(33,77,90,0.4) 0%, rgba(33,77,90,0.4) 22%, rgba(0,216,255,0.4) 57%, rgba(244,152,179,0.4) 100%);
+    }
+    header a {
+        grid-area: logo;
+        width: 80%;
+        height: 40%;
+        margin-left: 20%;
+        margin-top: 15%;
+        
+    }
+    .events{
+        grid-area: events;  
+    }
+    .events img{
+        width: 45%;
+        margin-left: 20%;
+        margin-top: 10%;
+    }
+    .eventsTitle{
+        margin-left: 42%;
+    }
+    .events p {
+        display: none;
+    }
+    .activitie:hover{
+        background-color: $nav-mobile;
+        img, div{
+            display: block;
+        }
+    }
+    .activitie img, .activitie div{
+        display: none;
+    }
+    .activitie img{
+        width: 80%;
+        margin: auto;
+    }
     
-}
-
-.logo{
-    width: 100%;
-}
-.events img{
-    width: 45%;
-    margin-left: 20%;
-    margin-top: 10%;
-
-}
-.dateInt{
-    font-family: 'montserra';
-    color: $blue;
-}
-.dateChar{
-    font-family: 'maven';
-    color: $blue;
-}
-.eventsTitle{
-    margin-left: 42%;
-}
-.events p {
-    display: none;
-}
-nav{
-    display: none;
-}
-.menu-checkbox:checked ~ nav{
-    display: block;
-}
-
-
-
-.menu-toggle span{
+    .activitie{
+        margin: 3% auto 0% auto;
+        width: 80%;
+        background-color: rgb(240, 240, 240);
+        height: 100%;
+        p{
+            padding: 5% 0% 5% 0%;
+            padding-left: 4%;
+            font-weight: 500;
+        }
+        h4{
+            padding-top: 5%;
+            padding-left: 4%;
+        }
+    }
+    h3{
+        margin-top: 3%;
+        text-align: center;
+    }
     
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-    background: $blue;
-}
-.menu-checkbox{
-    position: absolute;
-    opacity: 0;
-    top: -5000%;
 }
 .inputSee{
     width: 50%;
@@ -93,47 +120,15 @@ nav{
     border-radius: 100px 100px 100px 100px;
     border: none;
     background-color: $blue;
-    color: white;
 }
 .inputSee:focus{
     border: none;
     outline: none;
 
 }
-.activitie img, .activitie div{
-    display: none;
-}
-.activitie img{
-    width: 80%;
-    margin: auto;
-}
 
-.activitie{
-    margin: 3% auto 0% auto;
-    width: 80%;
-    background-color: rgb(240, 240, 240);
-    height: 100%;
-    p{
-        padding: 5% 0% 5% 0%;
-        color: $blue;
-        padding-left: 4%;
-        font-weight: 500;
-    }
-    h4{
-        padding-top: 5%;
-        padding-left: 4%;
-        color: $grey;
-    }
-}
-.activitie:hover{
-    background-color: $nav-mobile;
-    img, div{
-        display: block;
-    }
-    h4{
-        color: rgb(202, 202, 202);
-    }
-}
+
+
 .timeline{
     border: 1px solid $grey;
     width: 80%;
@@ -144,11 +139,7 @@ nav{
     }
 
 }
-h3{
-    color: $blue;
-    margin-top: 3%;
-    text-align: center;
-}
+
 .disable{
     display: none;
 
@@ -178,7 +169,7 @@ footer{
         'support'
         'network'
     ;
-    background: rgba($color: #8f8f8f, $alpha: 0.5);
+    background: linear-gradient(180deg, rgba(33,77,90,0.4) 0%, rgba(33,77,90,0.4) 5%, rgba(0,216,255,0.4) 35%, rgba(244,152,179,0.4) 92%, rgba(244,152,179,0.4) 100%);
 }
 .infoFooter{
     grid-area: info;
