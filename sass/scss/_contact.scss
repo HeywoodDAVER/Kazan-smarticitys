@@ -1,0 +1,50 @@
+@media(min-width: 800px){
+    .grid{
+        width: 70%;
+        margin: 0 auto 0 auto ;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 2%;
+        grid-template-rows: 1fr 1fr 3fr;
+        grid-template-areas: 
+        'nom prenom email'
+        'objet objet objet'
+        'message message message'
+        ;
+        label{
+            display: block;
+        }
+        input{
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid rgba($color: $grey, $alpha: 0.3) ;
+        }
+        input:focus{
+            outline: none;
+            border: none;
+            border-bottom: 1px solid $grey;
+        }
+        input:valid{
+            border-bottom: 1px solid $blue;
+        }
+        textarea{
+            width: 100%;
+        }
+        .dNom{
+            grid-area: nom;
+        
+        }
+        .dPrenom{
+            grid-area: prenom;
+        }
+        .dPmail{
+            grid-area: email;
+        }
+        .dObjet{
+            grid-area: objet;
+        }
+        .dMessage{
+            grid-area: message;
+        }
+    }
+}

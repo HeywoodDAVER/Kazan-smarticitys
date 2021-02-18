@@ -2,6 +2,7 @@
 @import "scss/_font.scss";
 @import "scss/_desktop.scss";
 @import "scss/_animation.scss";
+@import "scss/_contact.scss";
 
 *{
     margin: 0;
@@ -11,6 +12,16 @@ header{
     background-image: url("../assets/img/images/header.jpg");
     background-repeat: no-repeat;
     background-position: top right;
+}
+nav{
+    ul{
+        li{
+            a{
+                text-decoration: none;
+                color: $pink-nav;
+            }
+        }
+    }
 }
 .menu-toggle{
     margin-left: 60%;
@@ -183,9 +194,27 @@ footer{
     
 }
 .footer{
+    padding-top: 5%;
     background: linear-gradient(180deg, rgba(33,77,90,0.4) 0%, rgba(33,77,90,0.4) 5%, rgba(0,216,255,0.4) 35%, rgba(244,152,179,0.4) 92%, rgba(244,152,179,0.4) 100%);
 }
 .network{
     background-color: white;
-    border-radius: 5% 5% 5% 5%;
+    border-radius: 20px;
+    h4{
+        margin: 5% 0 0 5%;
+    }
+    div{
+        display: flex;
+        p{
+            margin: 7% 5% 0 5%;
+        }
+    }
+}
+.infoFooter{
+    address{
+        margin: 2% 0 2% 0;
+    }
+}
+.activities h3{
+    padding-bottom: 2%;
 }
