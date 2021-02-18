@@ -36,6 +36,7 @@ h4 span{
 }
 h3{
     font-size: 1.4em;
+    color: $blue;
 }
 .dateInt{
     font-family: 'montserra';
@@ -47,4 +48,41 @@ h3{
 }
 .header p {
     color: $head-font;
+}
+address{
+    font-style: normal;
+    font-family: 'museo';
+}
+@media(min-width: 800px){
+    li{
+        color: $pink-nav;
+    }
+}
+footer{
+    line-height: 1.2em;
+    color: white;
+    h4{
+        color: white;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    .network{
+        color: $back-activitie;
+        h4{
+            color: $blue;
+        }
+    }
+}
+.activitie p{
+    color: $blue;
+}
+.activitie div{
+    h5{
+        color: $gold-font;
+    }
+    p{
+        color: white;
+    }
 }

@@ -20,6 +20,38 @@ header{
 }
 
 @media(max-width: 800px){
+    .footer{
+        display: grid;
+        grid-template-rows: 2fr 1fr 2fr;
+        grid-template-areas: 
+            'info'
+            'support'
+            'network'
+        ;
+        
+    }
+    .infoFooter{
+        grid-area: info;
+    }
+    .network{
+        grid-area: network;
+    
+    }
+    .support{
+        grid-area: support;
+    }
+    footer section{
+        width: 80%;
+        margin: 2% auto 2% auto;
+    }
+    h4 img{
+        width: 30px;
+    }
+    footer{
+        background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 100%;
+    }
     header{
         background-size: 250% 70%;
     }
@@ -110,6 +142,18 @@ header{
         margin-top: 3%;
         text-align: center;
     }
+    .disableSmart{
+        display: none;
+    }
+    .timeline{
+        border: 1px solid $grey;
+        width: 80%;
+        margin: 5% auto 0 auto;
+        height: 300px;
+        p{
+            margin-top: 5%;
+        }
+    }
     
 }
 .inputSee{
@@ -127,58 +171,20 @@ header{
 
 }
 
-
-
-.timeline{
-    border: 1px solid $grey;
-    width: 80%;
-    margin: 5% auto 0 auto;
-    height: 300px;
-    p{
-        margin-top: 5%;
-    }
-
-}
-
 .disable{
     display: none;
 
 }
-footer section{
-    width: 80%;
-    margin: 2% auto 2% auto;
-}
-h4 img{
-    width: 30px;
-}
-address{
-    font-style: normal;
-    font-family: 'museo';
-}
+
+
 footer{
     background-image: url('../assets/img/images/brent-cox-mid.jpg');
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 100% 100%;
+    
 }
 .footer{
-    display: grid;
-    grid-template-rows: 2fr 1fr 2fr;
-    grid-template-areas: 
-        'info'
-        'support'
-        'network'
-    ;
     background: linear-gradient(180deg, rgba(33,77,90,0.4) 0%, rgba(33,77,90,0.4) 5%, rgba(0,216,255,0.4) 35%, rgba(244,152,179,0.4) 92%, rgba(244,152,179,0.4) 100%);
 }
-.infoFooter{
-    grid-area: info;
-}
 .network{
-    grid-area: network;
     background-color: white;
-
-}
-.support{
-    grid-area: support;
+    border-radius: 5% 5% 5% 5%;
 }

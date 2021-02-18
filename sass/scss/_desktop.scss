@@ -97,4 +97,54 @@
 
         }
     }
+    footer{
+        h4 img{
+            width: 5%;
+        }
+        .footer{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+            'info info img img'
+            'network network support partner'
+            ;
+            width: 100%;
+            grid-row-gap: 5%;
+            .infoFooter{
+                grid-area: info;
+                margin: 2% 15% 2% 35%;
+            }
+            .disableSmart{
+                grid-area: img;
+                width: 65%;
+                margin: 2% 0% 2% 0%;
+            }
+            .network{
+                grid-area: network;
+                margin: 2% 15% 2% 35%;
+                height: 70%;
+            }
+            .support{
+                grid-area: support;
+                height: 80%;
+            }
+            .partner{
+                grid-area: partner;
+                img{
+                    height: 100%;
+                }
+                height: 80%;
+            }
+        }
+    }
+    .timeline{
+        border: 1px solid $grey;
+        width: 70%;
+        height: 300px;
+        margin: 0 auto 10% auto;
+        p{
+            margin-top: 5%;
+        }
+    }
 }
