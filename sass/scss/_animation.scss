@@ -1,0 +1,22 @@
+@media(min-width: 800px){
+    .activitie{
+        overflow: hidden;
+        div{
+            transition: all .5s;
+            
+        }
+    }
+    .activitie:hover{
+        .hover{
+            height: 100%;
+
+        }
+        .normal{
+            height: 0%;
+
+        } 
+    }
+    
+
+
+}
