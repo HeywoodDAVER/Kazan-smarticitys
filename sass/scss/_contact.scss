@@ -1,7 +1,14 @@
 @media(min-width: 800px){
+    .contact{
+        h4, h3{
+            width: 70%;
+            margin: 2% auto 0 auto ;
+        }
+    }   
+    
     .grid{
         width: 70%;
-        margin: 0 auto 0 auto ;
+        margin: 5% auto 0 auto ;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-column-gap: 2%;
@@ -47,4 +54,71 @@
             grid-area: message;
         }
     }
+    .submit{
+        
+        width: 20%;
+        height: 50px;
+        margin: 4% 40% 4% 40%;
+        border-radius: 100px 100px 100px 100px;
+        border: none;
+        background-color: $blue;
+    
+    
+    
+    }
+    .submit:focus{
+    border: none;
+    outline: none;
+    }
+   
+}
+@media(max-width: 799px){
+    .grid{
+        width: 70%;
+        margin: 2% auto 0 auto;
+    input{
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 5%;
+        border: none;
+        border-bottom: 1px solid rgba($color: $grey, $alpha: 0.3) ;
+    }
+    input:focus{
+        outline: none;
+        border: none;
+        border-bottom: 1px solid $grey;
+    }
+    input:valid{
+        border-bottom: 1px solid $blue;
+    }
+    label{
+        display: block;
+    }
+    textarea{
+        width: 100%;
+    }
+    
+
+}
+.contact{
+    h4{
+        text-align: center;
+    }
+}
+.submit{
+        
+    width: 20%;
+    height: 50px;
+    margin: 4% 40% 4% 40%;
+    border-radius: 100px 100px 100px 100px;
+    border: none;
+    background-color: $blue;
+
+
+
+}
+.submit:focus{
+border: none;
+outline: none;
+}
 }
