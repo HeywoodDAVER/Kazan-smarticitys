@@ -20,6 +20,9 @@
                 width: 76%;
                 border-radius: 100px 100px 100px 100px;
             }
+            li.search{
+                cursor: pointer;
+            }
         }
 
     }
@@ -80,6 +83,7 @@
             object-fit: cover;
         }
         .activitie{
+            cursor: pointer;
             .hover{
                 height: 0%;
                 background-color: $back-activitie;
